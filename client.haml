@@ -1,0 +1,25 @@
+!!! html
+%html
+  %head
+    %title Chat!
+    %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js", type: "text/javascript"}
+    %script{src: "/nowjs/now.js", type: "text/javascript"}
+    %script{src: "/client.js", type: "text/javascript"}
+  %body
+    #header
+      %h1 Chat!
+
+    #rooms
+      %a{href: "#", class: "change selected"}room 1
+      -
+      %a{href: "#", class: "change"}room 2
+      -
+      %a{href: "#", class: "change"}room 3
+
+    %br
+
+    #messages
+      %p You're in room 1
+
+    %input#text-input{type: "text"}
+    %input#send-button{type: "button", value: "send"}
